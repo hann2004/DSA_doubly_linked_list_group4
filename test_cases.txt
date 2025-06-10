@@ -1,4 +1,4 @@
-# Test Cases for Doubly Linked List CLI Program
+#Test Cases for Doubly Linked List CLI Program
 
 == Test Case 1: Insert at Beginning ==
 Input sequence:
@@ -110,12 +110,4 @@ Note:
 - Minor variations in prompts or spacing are fine; focus on core output matching.
 
 
-
-### Why this setup rocks:
-
- **Full feature coverage**: inserts, deletes, displays, searches, and invalid input handling.  
- **Catches errors gracefully**, showing you thought about UX.  
- **Easy manual verification** — just copy-paste inputs, watch outputs, and confirm.
-
-Save this file as `test_cases.txt` alongside your `main.cpp` and `README.md` to make your project look professional and well-tested. If you want, I can help you add screenshots or even automate these tests later!
 
