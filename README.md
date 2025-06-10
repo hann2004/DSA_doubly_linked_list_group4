@@ -5,7 +5,7 @@ Welcome to our Data Structures and Algorithms group project! This is a C++ conso
 
 
 Project Structure
-
+```bash
 DSA_doubly_linked_list_group4/
 │
 ├── main.cpp               # Full implementation of the doubly linked list CLI program
@@ -18,7 +18,7 @@ DSA_doubly_linked_list_group4/
 ├── rita.md
 ├── zekiya.md
 └── fenet.md
-
+```
 
  How to Run
 
