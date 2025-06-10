@@ -74,7 +74,7 @@ You can find sample test cases in the `test_cases.txt` file. These include:
 | **Berutawit** | Implemented insertions and deletions at head & tail | [`berutawit.md`](contributions/berutawit.md) |
 | **Degnet**    | Created forward and reverse display methods         | [`degnet.md`](contributions/degnet.md)       |
 | **Rita**      | Developed search function and improved input safety | [`rita.md`](contributions/rita.md)           |
-| **Zekiya**    | Insert/delete at specific position logic            | [`zekiya.md`](contributions/zekiya.md)       |
+| **Zekiya**    | Insert/delete at specific position logic            | [`zekeriya.md`](contributions/zekeriya.md)       |
 | **Fenet**     | Destructor, memory cleanup, and documentation help  | [`fenet.md`](contributions/fenet.md)         |
 
 
@@ -96,6 +96,6 @@ This project is for academic use and personal learning. Feel free to explore and
 
 Made with  by Group 4 — Software Engineering students at Arba Minch University.
 
-```
+
 
 
