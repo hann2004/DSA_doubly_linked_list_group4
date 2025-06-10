@@ -68,14 +68,14 @@ You can find sample test cases in the `test_cases.txt` file. These include:
 
  Group 4 - Team Members and Contributions
 
-| Name          | Contribution Summary                                | Full Log                                     |
-| ------------- | --------------------------------------------------- | -------------------------------------------- |
-| **Hanan**     | Menu system, main logic integration, and UI polish  | [`hanan.md`](contributions/hanan.md)         |
-| **Berutawit** | Implemented insertions and deletions at head & tail | [`berutawit.md`](contributions/berutawit.md) |
-| **Degnet**    | Created forward and reverse display methods         | [`degnet.md`](contributions/degnet.md)       |
-| **Rita**      | Developed search function and improved input safety | [`rita.md`](contributions/rita.md)           |
-| **Zekiya**    | Insert/delete at specific position logic            | [`zekeriya.md`](contributions/zekeriya.md)       |
-| **Fenet**     | Destructor, memory cleanup, and documentation help  | [`fenet.md`](contributions/fenet.md)         |
+| Name          | Contribution Summary                                                                             | Full Log                                     |
+| ------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| **Hanan**     | 	Setup, includes, color definitions, Node struct, constructor & destructor of DoublyLinkedList  | [`hanan.md`](contributions/hanan.md)         |
+| **Berutawit** | Insertion methods: insertAtBeginning, insertAtEnd, insertAtPosition with forward display         | [`berutawit.md`](contributions/berutawit.md) |
+| **Degnet**    | Deletion methods: deleteAtBeginning, deleteAtEnd, deleteAtPosition with display after deletions  | [`degnet.md`](contributions/degnet.md)       |
+| **Rita**      | Display methods: displayForward, displayBackward, and search function                            | [`rita.md`](contributions/rita.md)           |
+| **Zekiya**    | Menu interface: main menu display, user input prompts, calling class methods                     | [`zekeriya.md`](contributions/zekeriya.md)   |
+| **Fenet**     | Menu logic: switch-case handling for all menu options, input validation                          | [`fenet.md`](contributions/fenet.md)         |
 
 
 
