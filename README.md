@@ -50,7 +50,7 @@ DSA_doubly_linked_list_group4/
 
 
 
-## 📌 Features
+ Features
 
 * Insert node at beginning, end, or at a specific position
 * Delete node from beginning, end, or a specific position
@@ -62,7 +62,7 @@ DSA_doubly_linked_list_group4/
 
 
 
-## 📄 Test Cases
+ Test Cases
 
 You can find sample test cases in the `test_cases.txt` file. These include:
 
@@ -72,7 +72,7 @@ You can find sample test cases in the `test_cases.txt` file. These include:
 
 
 
-## 👥 Group 4 - Team Members and Contributions
+ Group 4 - Team Members and Contributions
 
 | Name          | Contribution Summary                                | Full Log                                     |
 | ------------- | --------------------------------------------------- | -------------------------------------------- |
@@ -85,7 +85,7 @@ You can find sample test cases in the `test_cases.txt` file. These include:
 
 
 
-## 🧠 Learning Outcomes
+ Learning Outcomes
 
 * Strengthened understanding of doubly linked list structures
 * Improved our C++ problem-solving and memory handling
@@ -94,7 +94,7 @@ You can find sample test cases in the `test_cases.txt` file. These include:
 
 
 
-## 📃 License
+ License
 
 This project is for academic use and personal learning. Feel free to explore and modify for educational purposes. No commercial use is permitted.
 
