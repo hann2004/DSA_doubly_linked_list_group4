@@ -1,15 +1,15 @@
 ```markdown
-#  DSA - Doubly Linked List Project (Group 4)
+  DSA - Doubly Linked List Project (Group 4)
 
 Welcome to our Data Structures and Algorithms group project! This is a C++ console application that implements a **Doubly Linked List** with full functionality and a clean, interactive terminal interface. It is part of our university coursework under the subject of **Data Structures**.
 
----
+
 
 ##  Project Structure
 
 ```
 
-DSA\_doubly\_linked\_list\_group4/
+DSA_doubly_linked_list_group4/
 │
 ├── main.cpp               # Full implementation of the doubly linked list CLI program
 ├── README.md              # You’re reading it 
