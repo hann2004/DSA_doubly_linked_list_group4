@@ -1,0 +1,121 @@
+# Test Cases for Doubly Linked List CLI Program
+
+== Test Case 1: Insert at Beginning ==
+Input sequence:
+1
+5
+7
+0
+
+Expected output includes:
+Inserted 5 at the beginning.
+List (forward): 5 10 20 30 40 50 [Size: 6]
+
+== Test Case 2: Insert at End ==
+Input sequence:
+2
+60
+7
+0
+
+Expected output includes:
+Inserted 60 at the end.
+List (forward): 10 20 30 40 50 60 [Size: 6]
+
+== Test Case 3: Insert at Position ==
+Input sequence:
+3
+25
+3
+7
+0
+
+Expected output includes:
+Inserted 25 at position 3.
+List (forward): 10 20 25 30 40 50 [Size: 6]
+
+== Test Case 4: Delete at Beginning ==
+Input sequence:
+4
+7
+0
+
+Expected output includes:
+Deleted 10 from beginning.
+List (forward): 20 30 40 50 [Size: 4]
+
+== Test Case 5: Delete at End ==
+Input sequence:
+5
+7
+0
+
+Expected output includes:
+Deleted 50 from end.
+List (forward): 10 20 30 40 [Size: 4]
+
+== Test Case 6: Delete at Position ==
+Input sequence:
+6
+2
+7
+0
+
+Expected output includes:
+Deleted 20 at position 2.
+List (forward): 10 30 40 50 [Size: 4]
+
+== Test Case 7: Display Backward ==
+Input sequence:
+8
+7
+0
+
+Expected output includes:
+List (backward): 50 40 30 20 10
+
+== Test Case 8: Search for a Value (found) ==
+Input sequence:
+9
+30
+7
+0
+
+Expected output includes:
+Found at position: 3
+
+== Test Case 9: Search for a Value (not found) ==
+Input sequence:
+9
+999
+7
+0
+
+Expected output includes:
+Value not found.
+
+== Test Case 10: Invalid Input Handling ==
+Input sequence:
+x
+0
+
+Expected output includes:
+Invalid input type. Please enter a number.
+
+
+
+Note:  
+- Use `7` to display the list forward before exiting.  
+- Use `0` to exit the program after running each test case.  
+- Minor variations in prompts or spacing are fine; focus on core output matching.
+
+
+
+### Why this setup rocks:
+
+ **Full feature coverage**: inserts, deletes, displays, searches, and invalid input handling.  
+ **Catches errors gracefully**, showing you thought about UX.  
+ **Easy manual verification** — just copy-paste inputs, watch outputs, and confirm.
+
+Save this file as `test_cases.txt` alongside your `main.cpp` and `README.md` to make your project look professional and well-tested. If you want, I can help you add screenshots or even automate these tests later!
+
