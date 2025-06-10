@@ -1,4 +1,4 @@
-#Test Cases for Doubly Linked List CLI Program
+Test Cases for Doubly Linked List CLI Program
 
 == Test Case 1: Insert at Beginning ==
 Input sequence:
