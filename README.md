@@ -1,13 +1,10 @@
-```markdown
+
   DSA - Doubly Linked List Project (Group 4)
 
 Welcome to our Data Structures and Algorithms group project! This is a C++ console application that implements a **Doubly Linked List** with full functionality and a clean, interactive terminal interface. It is part of our university coursework under the subject of **Data Structures**.
 
 
-
-##  Project Structure
-
-```
+Project Structure
 
 DSA_doubly_linked_list_group4/
 │
@@ -22,23 +19,20 @@ DSA_doubly_linked_list_group4/
 ├── zekiya.md
 └── fenet.md
 
-````
 
+ How to Run
 
-
-## 🚀 How to Run
-
-### 🛠 Requirements
+ Requirements
 
 - C++ compiler (e.g. `g++`)
 - Terminal or Command Prompt
 
-### ⚙️ Steps
+ Steps
 
 1. **Compile the code**:
    ```bash
    g++ -o dll_app main.cpp
-````
+
 
 2. **Run the program**:
 
