@@ -142,3 +142,42 @@ void deleteAtBeginning() {
             displayForward();
         }
 }
+
+void displayForward() {
+        Node* temp = head;
+        cout << MAGENTA << "List (forward): " << RESET;
+        while (temp) {
+            cout << CYAN << temp->data << " " << RESET;
+            temp = temp->next;
+        }
+        cout << YELLOW << "[Size: " << size << "]" << RESET << endl;
+    }
+
+    void displayBackward() {
+        Node* temp = tail;
+        cout << MAGENTA << "List (backward): " << RESET;
+        while (temp) {
+            cout << CYAN << temp->data << " " << RESET;
+            temp = temp->prev;
+        }
+        cout << endl;
+    }
+
+    int search(int val) {
+        Node* temp = head;
+        int pos = 1;
+        while (temp) {
+            if (temp->data == val)
+                return pos;
+            temp = temp->next;
+            ++pos;
+        }
+        return -1;
+    }
+
+    void loadSampleData() {
+        int arr[] = {10, 20, 30, 40, 50};
+        for (int val : arr)
+            insertAtEnd(val);
+    }
+};
