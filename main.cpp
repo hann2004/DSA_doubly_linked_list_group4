@@ -181,3 +181,63 @@ void displayForward() {
             insertAtEnd(val);
     }
 };
+//fenet
+if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << RED << "Invalid input type. Please enter a number.\n" << RESET;
+            continue;
+        }
+
+        switch (choice) {
+            case 1:
+                cout << "Enter value: ";
+                cin >> val;
+                dll.insertAtBeginning(val);
+                break;
+            case 2:
+                cout << "Enter value: ";
+                cin >> val;
+                dll.insertAtEnd(val);
+                break;
+            case 3:
+                cout << "Enter value and position: ";
+                cin >> val >> pos;
+                dll.insertAtPosition(val, pos);
+                break;
+            case 4:
+                dll.deleteAtBeginning();
+                break;
+            case 5:
+                dll.deleteAtEnd();
+                break;
+            case 6:
+                cout << "Enter position: ";
+                cin >> pos;
+                dll.deleteAtPosition(pos);
+                break;
+            case 7:
+                dll.displayForward();
+                break;
+            case 8:
+                dll.displayBackward();
+                break;
+            case 9:
+                cout << "Enter value to search: ";
+                cin >> val;
+                pos = dll.search(val);
+                if (pos == -1)
+                    cout << RED << "Value not found.\n" << RESET;
+                else
+                    cout << GREEN << "Found at position: " << pos << "\n" << RESET;
+                break;
+            case 0:
+                cout << YELLOW << "Exiting program. Goodbye!\n" << RESET;
+                return 0;
+            default:
+                cout << RED << "Invalid choice. Please try again.\n" << RESET;
+        }
+    }
+
+    return 0;
+}
