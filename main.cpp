@@ -181,7 +181,27 @@ void displayForward() {
             insertAtEnd(val);
     }
 };
-//fenet
+
+int main() {
+    DoublyLinkedList dll;
+    dll.loadSampleData();
+
+    int choice, val, pos;
+
+    while (true) {
+        cout << YELLOW << "\n===== Doubly Linked List Menu =====\n" << RESET;
+        cout << "\n1. Insert at Beginning\n";
+        cout << "2. Insert at End\n";
+        cout << "3. Insert at Position\n";
+        cout << "4. Delete at Beginning\n";
+        cout << "5. Delete at End\n";
+        cout << "6. Delete at Position\n";
+        cout << "7. Display Forward\n";
+        cout << "8. Display Backward\n";
+        cout << "9. Search for a Value\n";
+        cout << "0. Exit\n";
+        cout << CYAN << "Choose an option: " << RESET;
+        cin >> choice;
 if (cin.fail()) {
             cin.clear();
             cin.ignore(1000, '\n');
