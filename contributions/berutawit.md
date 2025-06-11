@@ -1,4 +1,4 @@
-# Contribution – Berutaywit Eyasu NSR/167/16
+# Contribution – Berutawit Eyasu NSR/167/16
 
 Role: Insertion Methods
 
