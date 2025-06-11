@@ -92,3 +92,53 @@ public:
         head = tail = nullptr;
         size = 0;
     }
+void deleteAtBeginning() {
+        if (!head) return;
+        Node* temp = head;
+        head = head->next;
+        if (head) head->prev = nullptr;
+        else tail = nullptr;
+        cout << RED << "Deleted " << temp->data << " from beginning.\n" << RESET;
+        delete temp;
+        size--;
+        displayForward();
+    }
+
+    void deleteAtEnd() {
+        if (!tail) return;
+        Node* temp = tail;
+        tail = tail->prev;
+        if (tail) tail->next = nullptr;
+        else head = nullptr;
+        cout << RED << "Deleted " << temp->data << " from end.\n" << RESET;
+        delete temp;
+        size--;
+        displayForward();
+    }
+
+    void deleteAtPosition(int pos) {
+        if (!head || pos < 1) return;
+
+        if (pos == 1) {
+            deleteAtBeginning();
+            return;
+        }
+
+        Node* temp = head;
+        for (int i = 1; temp && i < pos; ++i) {
+            temp = temp->next;
+        }
+
+        if (!temp) return;
+
+        if (temp == tail) {
+            deleteAtEnd();
+        } else {
+            temp->prev->next = temp->next;
+            temp->next->prev = temp->prev;
+            cout << RED << "Deleted " << temp->data << " at position " << pos << ".\n" << RESET;
+            delete temp;
+            size--;
+            displayForward();
+        }
+}
