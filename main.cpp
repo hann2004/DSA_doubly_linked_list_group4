@@ -15,8 +15,32 @@ struct Node {
 
     Node(int val) : data(val), next(nullptr), prev(nullptr) {}
 };
-// Berutawit 
-void insertAtBeginning(int val) {
+
+class DoublyLinkedList {
+private:
+    Node* head;
+    Node* tail;
+    int size;
+
+public:
+    DoublyLinkedList() : head(nullptr), tail(nullptr), size(0) {}
+
+    ~DoublyLinkedList() {
+        clear();
+    }
+
+    void clear() {
+        Node* temp = head;
+        while (temp) {
+            Node* next = temp->next;
+            delete temp;
+            temp = next;
+        }
+        head = tail = nullptr;
+        size = 0;
+    }
+
+    void insertAtBeginning(int val) {
         Node* newNode = new Node(val);
         if (!head) {
             head = tail = newNode;
@@ -69,30 +93,7 @@ void insertAtBeginning(int val) {
         }
     }
 
-class DoublyLinkedList {
-private:
-    Node* head;
-    Node* tail;
-    int size;
-
-public:
-    DoublyLinkedList() : head(nullptr), tail(nullptr), size(0) {}
-
-    ~DoublyLinkedList() {
-        clear();
-    }
-
-    void clear() {
-        Node* temp = head;
-        while (temp) {
-            Node* next = temp->next;
-            delete temp;
-            temp = next;
-        }
-        head = tail = nullptr;
-        size = 0;
-    }
-void deleteAtBeginning() {
+    void deleteAtBeginning() {
         if (!head) return;
         Node* temp = head;
         head = head->next;
@@ -141,9 +142,9 @@ void deleteAtBeginning() {
             size--;
             displayForward();
         }
-}
+    }
 
-void displayForward() {
+    void displayForward() {
         Node* temp = head;
         cout << MAGENTA << "List (forward): " << RESET;
         while (temp) {
@@ -202,7 +203,8 @@ int main() {
         cout << "0. Exit\n";
         cout << CYAN << "Choose an option: " << RESET;
         cin >> choice;
-if (cin.fail()) {
+
+        if (cin.fail()) {
             cin.clear();
             cin.ignore(1000, '\n');
             cout << RED << "Invalid input type. Please enter a number.\n" << RESET;
